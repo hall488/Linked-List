@@ -55,11 +55,11 @@ const LinkedList = () => {
   };
 
   const at = (index) => {
-    if (node == undefined) return node;
-
     if (index > size() - 1 || index < 0) {
       throw new Error("Index out of bounds of list");
     }
+
+    if (node == undefined) return node;
 
     let lastNode = node;
     let count = 0;
